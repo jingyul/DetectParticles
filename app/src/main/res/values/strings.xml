@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">DetectParticles</string>
+    <string name="google_app_id">968082607638</string>
+
+    <string name="action_settings">Settings</string>
+
+    // for buttons
+    <string name="done">Done</string>
+    <string name="close">Close</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="back">Back</string>
+    <string name="delete_result">Delete Result</string>
+    <string name="redo">Redo</string>
+    <string name="start_test">Test Sample</string>
+    <string name="next_test">Next Test</string>
+    <string name="transfer_result">Transfer Result</string>
+    <string name="transfer_results">Transfer Results</string>
+
+
+    <string name="super_user">Super User</string>
+
+    <string name="transfer_all">Transfer All</string>
+    <string name="delete_all">Delete All</string>
+
+    <string name="close_chamber">The chamber needs to be closed before test</string>
+    <string name="open_chamber">The chamber needs to be opened to start test</string>
+
+    <string name="particle_test_result">Particle Test Result</string>
+
+    <string name="test_location">Location</string>
+    <string name="latitude">Latitude:</string>
+    <string name="longitude">Longitude:</string>
+
+    <string name="enter_compare_reading">Enter DustTrak Reading</string>
+    <string name="enter_comments">Enter Comments</string>
+    <string name="reading_unit">mg/m^3</string>
+
+    <string name="instruction1">Step 1</string>
+    <string name="instruction2">Step 2</string>
+
+    <string name="reference">Reference:</string>
+    <string name="comments">Comments:</string>
+    <string name="transfered">*Transfered</string>
+    <string name="transfered_not">Not Transfered</string>
+
+    <string name="master_key">Master Key</string>
+    <string name="incorrect">Incorrect. Try again.</string>
+
+    <string name="set_camera">Set Camera</string>
+    <string name="focus_mm">Focus 100mm&#8211;infinite</string>
+    <string name="exposure_time">Expo 32000&#8211;5000000000</string>
+    <string name="iso">ISO 50&#8211;1600</string>
+    <string name="flash_on">Flash On</string>
+    <string name="flash_off">Flash Off</string>
+
+    <string name="delete_title">Confirm Delete</string>
+    <string name="delete_confirmation">Are you sure you want to delete this test result?</string>
+    <string name="delete_all_confirmation">Are you sure you want to delete all the results?</string>
+
+    <string name="transfer_title">Confirm Transfer</string>
+    <string name="transfer_confirmation">Are you sure you want to transfer this test result?</string>
+    <string name="transfer_all_confirmation">Are you sure you want to transfer all the results?</string>
+
+    <string name="authentication_first">Must authenticate first! Press TRANSFER again to transfer after authenticated.</string>
+
+    <string name="download_reminder">Please transfer test result when WIFI is available</string>
+
+    <string name="test_results">Test Results (* file has been transferred)</string>
+
+
+    <string name="request_permission">This app needs camera permission.</string>
+</resources>

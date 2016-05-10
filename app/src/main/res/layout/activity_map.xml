@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <Button
+        android:id="@+id/button_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/transfer_result"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+
+    <Button
+        android:id="@+id/button_delete_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_result"
+        android:layout_alignTop="@+id/button_transfer"
+        android:layout_toEndOf="@+id/button_transfer"/>
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:layout_alignTop="@+id/button_transfer"
+        android:layout_toEndOf="@+id/button_delete_result"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView_reference"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="4dp"
+        android:textColor="@android:color/holo_purple"
+        android:textStyle="bold|italic"
+        android:layout_alignParentEnd="true"
+        android:text="reference"
+        android:layout_toEndOf="@+id/textView4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="user comments"
+        android:id="@+id/textView_comments"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/textView_reference"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/holo_purple"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingLeft="10dp"
+        android:text="@string/reference"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/textView_comments"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingLeft="10dp"
+        android:text="@string/comments"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView_reference"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/textView_transfered"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/holo_purple"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView_comments"
+        android:layout_alignStart="@+id/button_transfer"/>
+
+</RelativeLayout>

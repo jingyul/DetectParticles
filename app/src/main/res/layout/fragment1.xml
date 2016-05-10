@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- title -->
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instruction1"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <!-- Instruction -->
+    <TextView
+        android:id="@+id/textView_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/close_chamber"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/text_title"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="bold"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentEnd="true" />
+
+    <!-- DONE button -->
+    <Button
+        android:id="@+id/button_done_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test_close_toggleButton"
+        android:layout_gravity="bottom|center_horizontal|right"
+        android:textOff="close chamber"
+        android:textOn="open chamber"
+        android:textSize="@dimen/abc_text_size_body_1_material"
+        android:layout_alignParentBottom="true"
+        style="@android:style/TextAppearance.DeviceDefault.Small" />
+
+</RelativeLayout>

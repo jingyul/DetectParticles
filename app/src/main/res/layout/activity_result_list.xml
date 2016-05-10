@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent" android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/test_results"
+        android:id="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"/>
+
+    <ListView android:id="@+id/resultList"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/textView2"
+              android:layout_alignParentLeft="true"
+              android:layout_marginBottom="44dp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:id="@+id/button_delete_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_all"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="38dp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:id="@+id/button_close_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/close"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="48dp"/>
+
+</RelativeLayout>

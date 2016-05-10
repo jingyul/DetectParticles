@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- title -->
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/particle_test_result"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <!-- date/time -->
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="dd/mm/yy hh:mm:ss"
+        android:layout_below="@+id/text_title"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/holo_blue_light" />
+
+    <!-- Test Result -->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0.557"
+        android:layout_below="@+id/textViewTime"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:textColor="@android:color/holo_blue_light" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reading_unit"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:textColor="@android:color/darker_gray"
+        android:layout_alignBottom="@+id/textViewResult"
+        android:layout_toRightOf="@+id/textViewResult" />
+
+
+    <!-- display location -->
+    <TextView
+        android:id="@+id/text_longitude_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/longitude"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/textViewResult"/>
+
+    <TextView
+        android:id="@+id/text_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:textColor="@android:color/holo_blue_light"
+        android:text="0.0000000000000"
+        android:layout_marginLeft="120dp"
+        android:layout_alignBottom="@+id/text_longitude_label" />
+
+
+    <TextView
+        android:id="@+id/text_latitude_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/latitude"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/text_longitude" />
+
+    <TextView
+        android:id="@+id/text_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:text="0.0000000000000"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_marginLeft="120dp"
+        android:layout_alignBottom="@+id/text_latitude_label" />
+
+
+
+    <!-- enter DustTrak reading -->
+    <TextView
+        android:id="@+id/enter_other_reading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_compare_reading"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/text_latitude"
+        android:layout_alignStart="@+id/editText_other_reading" />
+
+    <EditText
+        android:id="@+id/editText_other_reading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:textColor="@android:color/holo_blue_light"
+        android:imeOptions="actionDone"
+        android:layout_below="@+id/enter_other_reading"
+        android:layout_alignStart="@+id/text_longitude_label"
+        android:layout_alignEnd="@+id/reading_unit" />
+
+    <TextView
+        android:id="@+id/reading_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reading_unit"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:textColor="@android:color/darker_gray"
+        android:layout_alignTop="@+id/editText_other_reading"
+        android:layout_toEndOf="@+id/text_title"
+        android:layout_alignBottom="@+id/editText_other_reading" />
+
+
+    <!-- enter comments -->
+    <TextView
+        android:id="@+id/enter_comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_comments"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/editText_other_reading"
+        android:layout_alignStart="@+id/editText_other_reading" />
+
+
+    <EditText
+        android:id="@+id/editText_comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:singleLine="true"
+        android:textColor="@android:color/holo_blue_light"
+        android:imeOptions="actionDone"
+        android:inputType="textLongMessage"
+        android:layout_below="@+id/enter_comments"
+        android:layout_alignStart="@+id/enter_comments"
+        android:layout_alignEnd="@+id/reading_unit" />
+
+    <!-- save, cancel -->
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editText_comments"
+        android:layout_marginBottom="36dp" />
+
+    <Button
+        android:id="@+id/button_redo"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/redo"
+        android:layout_alignTop="@+id/button_back"
+        android:layout_toEndOf="@+id/button_back" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_alignTop="@+id/button_redo"
+        android:layout_toEndOf="@+id/button_redo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/textView_camera"
+        android:layout_above="@+id/button_back"
+        android:layout_alignStart="@+id/button_back"
+        android:layout_alignEnd="@+id/button_save"/>
+
+
+</RelativeLayout>
